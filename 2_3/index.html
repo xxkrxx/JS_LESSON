@@ -9,10 +9,12 @@
   $(function(){
     // ここに処理を記述
     $('#button').click(function() {
+      // ここにアニメーションの設定
       $(this).animate({
         'left': '500px',
         'top': '300px'
       },{
+        // 移動時間指定
         'duration': 1500
       });
     });
