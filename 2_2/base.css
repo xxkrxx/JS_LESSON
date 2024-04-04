@@ -58,3 +58,7 @@ body {
   font-size: 30px;
   text-align: center;
 }
+
+.selected {
+  background-color: red; /* 選択されたボタンの背景色 */
+}
