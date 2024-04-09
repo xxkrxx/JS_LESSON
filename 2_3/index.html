@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>アニメーション2_3</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script>
+  $(function(){
+    // ここに処理を記述
+    $('#button').click(function() {
+      // ここにアニメーションの設定
+      $(this).animate({
+        'left': '500px',
+        'top': '300px'
+      },{
+        // 移動時間指定
+        'duration': 1500
+      });
+    });
+  });
+  </script>
+</head>
+<body>
+  <div id="button">
+    <p>button</p>
+  </div><!-- button -->
+</body>
+</html>

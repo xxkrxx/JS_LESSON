@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>値の取得2_4</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      // ここに処理を記述
+      // ボタンの要素を取得
+      var button = document.getElementById("button");
+
+      // ボタンをクリックした時の処理
+      button.addEventListener("click", function(e) {
+        e.preventDefault();
+      
+        // 入力フォームの値を取得
+        var textForm = document.getElementById("textForm").value;
+      
+        // 取得した値をアラートで表示
+        alert(textForm);
+      });
+    });
+  </script>
+</head>
+<body>
+  <input type="text" id="textForm">
+  <input type="button" id="button" value="ボタン">
+</body>
+</html>
+

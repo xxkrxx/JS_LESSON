@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>if文2_5</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script>
+    $(function(){
+      // ボタンがクリックされた時の処理
+      $("#button").on("click", function () {
+        // 入力フィールドの値を取得
+        var v = $('input').val();
+        
+        // 入力フィールドの値に応じて条件分岐
+        if(v == 1){
+          // 値が1の場合の背景色を赤に変更
+          $('#box').css('background-color','red');
+        }else if(v == 2){
+          // 値が2の場合の背景色を緑に変更
+          $('#box').css('background-color' ,'green');
+        }else{
+          // それ以外の場合の背景色を青に変更
+          $('#box').css('background-color' ,'blue');
+        }
+      });
+    });
+  </script>
+  
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="box">
+  </div><!-- button -->
+</body>
+</html>
